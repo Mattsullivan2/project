@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="discription" content="Babson's Brac athletic basketball courts news and information for the student experience">
+    <meta name="keyword" content="Babson, babson Brac, babson Athletics, babson students, Babson Gym, babson basketball courts"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solutions</title>
+    <link  rel="icon" href="images/favicon.png" type="image/x-icon">
 <style>
     .firstCol{
         
-        width: 40%;            
+        width: 50%;            
     }
     .secondCol{
         width: 40%;
@@ -19,17 +22,28 @@
     }
     #firstRow{
         height: 10%;
-        background-color: blue;
+        background-color: black;
+        color: white;
+        text-align: right;
+        
     }
     #secondRow{
         height: 20px;
     }
     #thirdRow{
         height: 2px;
-        background-color: red;
+        background-color:black;
+        color: white;
+        text-align: left;
+    }
+    #s1{
+        margin-right: 10px;
+    }
+    #s2{
+        margin-left: 10px;
     }
     table{
-        width: 95%;
+        width: 100%;
     }
     img{
         width: 100%;
@@ -40,9 +54,58 @@
         height: 100%;
     }
     caption{
+        font-size: 30px;
         text-decoration: underline;
-        font-size: 30px ;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        background-color: green;
+    
     }
+    body{
+        background-color: 	#8B4513;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    #homepage:hover{
+        background-color: black;
+    }
+    #problem:hover{
+        background-color: black;
+    }
+    #effects:hover{
+        background-color: black;
+    }
+    #solution:hover{
+        background-color: black;
+    }
+    #feedback:hover{
+        background-color: black;
+    }
+        
+    
+        ul{
+            width: 90%;
+            height: 100%;
+            list-style: none;
+            
+            margin-left: -35px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            border: 2px black solid;
+            border-collapse: collapse;
+            padding-top: 20px;
+            padding-right: 0px;
+            text-align: center;
+            padding-bottom: 12px;
+
+    
+        }
     p{
         padding-left: 10px;
         padding-right: 10px;
@@ -59,18 +122,17 @@
        <td  class="firstCol" rowspan="1" colspan="2">
 
         <td>
-        <h5> Solution 1: Refocus on Founding Principles</h5>
+        <h5 id="s1"> Solution 1: Refocus on Founding Principles</h5>
     </td>
        </td>
     </td>
     <td class ="thirdCol" colspan="1" rowspan="5">
         <ul>
-            <li>Homepage</li>
-            <li>The Problem</li>
-            <li>Effects on Students</li>
-            <li>Costs/Benefit</li>
-            <li>Solution</li>
-            <li>Feedback</li>
+            <li id="homepage"> <a href="index.html"> Homepage</a></li>
+            <li id="problem"> <a href="theProblem.html"> The Problem </a></li>
+            <li id="effects"> <a href="EffectsOnStudents.html"> Effects on Students </a></li>
+            <li id="solution"> <a href="solutions.html"> Solution </a></li>
+            <li id="feedback"> <a href="feedback.html"> Feedback </a></li>
         </ul>
     </td>
  
@@ -87,7 +149,7 @@
 </tr>
 <tr id="thirdRow">
     <td class="firstCol" rowspan="1" colspan="2">
-        <h5>Solution 2: Off Peak Times Compromise </h5>
+        <h5 id="s2">Solution 2: Off Peak Times Compromise </h5>
         <td></td>
     </td>
 </tr>
@@ -107,6 +169,6 @@
 
 
 </table>
-
+<a href="sitemap.html">Go To Sitemap</a>
 </body>
 </html>

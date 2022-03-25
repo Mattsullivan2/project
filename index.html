@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back is Wac Homepage</title>
+    <link  rel="icon" href="images/favicon.png" type="image/x-icon">
 <style>
     caption{
         font-size: 30px;
         text-decoration: underline;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: white;
+        background-color: green;
+    
     }
     .firstCol{
         width: 80%;
@@ -17,16 +22,22 @@
     #mainPic{
         width: 100%;
         height: 100%;
-        background-color: red;
+        
     }
     img{
         width: 90%;
         height: 90%;
         padding: 5%;
-        margin-top: -10px;
+        margin-top: 0px;
+        background-color: #8B4513 ;
+        border: solid 2px black;
+        
+        
     }
     .secondCol{
-        background-color: blue;
+        background-color: green;
+        
+        
     }
     ul{
         width: 80%;
@@ -36,8 +47,27 @@
         margin-left: -25px;
         
     }
+    body{
+        background-color: 	#8B4513;
+    }
     a{
         text-decoration: none;
+        color: white;
+    }
+    #homepage:hover{
+        background-color: black;
+    }
+    #problem:hover{
+        background-color: black;
+    }
+    #effects:hover{
+        background-color: black;
+    }
+    #solution:hover{
+        background-color: black;
+    }
+    #feedback:hover{
+        background-color: black;
     }
     li{
         border: 2px black solid;
@@ -46,11 +76,14 @@
         padding-right: 0px;
         text-align: center;
         padding-bottom: 12px;
+        color: white;
 
     }
     #secondRow{
-        background-color: purple;
+        background-color: #8B4513;
         height: 20px;
+        margin-top: 50px;
+        
     
     }
     h4{
@@ -76,12 +109,11 @@
     </td>
     <td class ="secondCol" colspan="1" rowspan="2">
     <ul>
-        <li>Homepage</li>
-        <li>The Problem</li>
-        <li>Effects on Students</li>
-        <li>Costs/Benefit</li>
-        <li>Solution</li>
-        <li>Feedback</li>
+        <li id="homepage"> <a href="index.html"> Homepage</a></li>
+        <li id="problem"> <a href="theProblem.html"> The Problem </a></li>
+        <li id="effects"> <a href="EffectsOnStudents.html"> Effects on Students </a></li>
+        <li id="solution"> <a href="solutions.html"> Solution </a></li>
+        <li id="feedback"> <a href="feedback.html"> Feedback </a></li>
     </ul>
 </td>
 </tr>
@@ -91,5 +123,6 @@
     </td>
 </tr>
 </table>
+<a href="sitemap.html">Go To Sitemap</a>
 </body>
 </html>
