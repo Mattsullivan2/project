@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .email{
+            margin-top: 5px;
+            margin-left: 3px;
+        }
+        legend{
+            font-weight: 700;
+        }
+        fieldset{
+            border:solid lightgray 2px;
+            margin-top: 10px;
+            width: 500px;
+        }
+        .review{
+            margin-top: 10px;
+        }
+        .comments{
+            margin-top: 10px;
+           
+        }
+        .signup{
+            margin-top: 10px;
+        }
+        input{
+            border: solid 1px lightgray;
+        }
+        h1{
+            text-align: center;
+        }
+        form{
+          
+            width: 500px;
+            margin: auto;
+            
+        }
+  
+      </style>
+    </head>
+    <body>
+      <h1>Student Feedback and Sign Up</h1>
+      <form method="post" action="https://oim-apis.herokuapp.com/form">
+        <fieldset>
+          <legend>Your Information:</legend>
+          <div class="name">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            maxlength="100"
+            placeholder="Enter your Name here"
+          />
+      </div>
+          <div class="email">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            maxlength="100"
+            placeholder="Enter your Email here"
+          />
+      </div>
+        </fieldset>
+        <fieldset>
+          <legend>Your Review:</legend>
+          <div class="solution">
+          <label for="solution">What solution would you pick? </label>
+  
+          <select name="solution" id="solution">
+            <option value="">-- Please select your choice--</option>
+            <option value="option1">Refocus on Founding Principles </option>
+            <option value="option2">Off-Peak Times Compromise</option>
+            <option value="Other">Other Please describe below</option>
+          </select>
+      </div>
+          <div class="review">What do you think of this website?
+              <br>
+            <label for="needsWork">needs work
+            <input type="radio" name="What do you think of this product?" id="needsWork" />
+          </label>
+            <label for="awesome">Awsome
+            <input type="radio" name="What do you think of this product?" id="awesome" />
+          </label>
+            <label for="good">Good
+            <input type="radio" name="What do you think of this product?" id="good" />
+          </label>
+          </div>
+          <div class="comments">
+              <label for="comments">Comments:</label>
+             <br>
+              <textarea
+              name="comments"
+              id="comments"
+              cols="50"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="signup"> 
+             
+              <input type="checkbox"  id="sign-up" checked>
+              <label for="sign-up">Sign me up for email updates</label>
+          </div>
+          <div>
+              <button type="submit">
+              Submit</button>
+              <button type="reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+      <Div id="ContractInfo">
+          <h3>This page was developed by Matt Sullivan with colaberations from concered students at Babson</h3>
+          <h5>Contact Info</h5>
+          <P>Email: Msullivan@bason.edu</P>
+          <p>website: Braciswac.social</p>
+          
+
+      </Div>
+    
+    
+</body>
+</html>
