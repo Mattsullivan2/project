@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="discription" content="Babson's Brac athletic basketball courts news and information for the student experience">
+    <meta name="keyword" content="Babson, babson Brac, babson Athletics, babson students, Babson Gym, babson basketball courts"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back is Wac Homepage</title>
+    
     <link  rel="icon" href="images/favicon.png" type="image/x-icon">
 <style>
     caption{
@@ -25,8 +28,8 @@
         
     }
     img{
-        width: 90%;
-        height: 90%;
+        width: 75%;
+        height: 75%;
         padding: 5%;
         margin-top: 0px;
         background-color: #8B4513 ;
@@ -119,10 +122,84 @@
 </tr>
 <tr id="secondRow">
     <td class="firstCol2" colspan="1" rowspan="1">
-<h4>This page is dedicated to shedding the light on the disregard for students in Brac scheduling. Since the beginning of the Brac, the administration has prioritized teams outside of our community over Babson’s own student body. </h4>
+        <br>
+        <br>
+<h4>This page is dedicated to shedding the light on the disregard for students in Brac scheduling. Since the beginning of the Brac, the administration has prioritized teams outside of our community over Babson’s own student body. This website walks you through an overview of Brac, what the problem is, how this is effecting students, and some possible solutions</h4>
     </td>
 </tr>
 </table>
+<form action="get">
+<h3 id="bracQuestion">How often do you use the Brac courts?</h3>
+<input type="number" id="numOfBrac"> <button>Submit</button>
+</form>
+<br>
+<br>
 <a href="sitemap.html">Go To Sitemap</a>
+<script>
+
+
+
+    function validate(){
+        console.log("in val")
+    num = document.querySelector("input").value
+    if(num < 0){
+        console.log("in here")
+        alert("please enter a positive integer")
+    } else {
+        console.log("in this one")
+        document.getElementById("bracQuestion").innerText = "Thank you for coming to Brac " + num + " times. We hope you find this website informational"
+        document.getElementById("bracQuestion").style.color = "Fuchsia"
+    }
+}
+
+document.querySelector("button").onclick = function(){
+    validate();
+}
+
+let slides = ['images/bracpage2.jpg','images/bracWacHomepage.jpg','images/oneBabson.png', 'images/playingBasketball.jpg'];
+        let i = 0 
+        let color = ["red", "blue", "green", "purple"]
+
+        function slideshow(){
+            if(i == slides.length ){ 
+                i = 0;
+            }
+
+            document.querySelector("img").src = slides[i];
+           
+            
+           
+            i++; 
+
+        
+            
+            
+            
+            setTimeout(slideshow, 3000);
+        }
+        document.querySelector("body").onload = function(){
+            slideshow()
+        }
+        function makebig(){
+            
+            document.querySelector("img").style.height = "85%"
+            document.querySelector("img").style.width = "85%"
+            document.querySelector("img").style.border = "none"
+        }
+        function makeSmall(){
+            document.querySelector("img").style.height = "75%"
+            document.querySelector("img").style.width = "75%"
+            document.querySelector("img").style.border = "solid"
+
+        }
+        document.querySelector("img").onmouseover = function(){
+            makebig();
+        }
+        document.querySelector("img").onmouseout = function(){
+            makeSmall();
+        }
+
+
+</script>
 </body>
 </html>

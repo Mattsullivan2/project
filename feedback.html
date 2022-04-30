@@ -12,7 +12,7 @@
     </head>
     <body>
       <h1>Student Feedback and Sign Up</h1>
-      <form method="post" action="https://oim-apis.herokuapp.com/form">
+      <form>
         <fieldset>
           <legend>Your Information:</legend>
           <div class="name">
@@ -77,12 +77,14 @@
               <label for="sign-up">Sign me up for email updates</label>
           </div>
           <div>
-              <button type="submit">
+              <button id="submit">
               Submit</button>
               <button type="reset">Reset</button>
           </div>
         </fieldset>
       </form>
+
+      <h4>Number of Students Signed up <span>0</span></h4>
       <Div id="ContractInfo">
           <h3>This page was developed by Matt Sullivan with colaberations from concered students at Babson</h3>
           <h5>Contact Info</h5>
@@ -93,5 +95,32 @@
       </Div>
     
       <a href="sitemap.html">Go To Sitemap</a>
+      <script>
+
+        function changePageColor(){
+          document.querySelector("body").style.backgroundColor = "white"
+        }
+
+        document.getElementById("submit").onclick = function(){
+          changePageColor();
+        }
+        num = 19
+        function counter(){
+          console.log("in here")
+           
+          document.querySelector("span").innerText = num 
+          num ++ 
+          console.log(num);
+          setTimeout(counter,6000);
+        }
+        document.querySelector("body").onload = function(){
+          counter();
+        }
+
+       
+
+
+
+      </script>
 </body>
 </html>
